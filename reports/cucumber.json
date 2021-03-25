@@ -10,15 +10,15 @@
           }
         ],
         "line": 5,
-        "name": "create basket",
+        "name": "merge basket",
         "description": "",
-        "id": "create-basket;create-basket",
+        "id": "merge-basket;merge-basket",
         "type": "scenario",
         "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 338300269,
+              "duration": 7439171,
               "status": "passed"
             },
             "line": 6,
@@ -30,36 +30,48 @@
           },
           {
             "result": {
-              "duration": 33130,
+              "duration": 31263,
               "status": "passed"
             },
             "line": 7,
-            "name": "i add an item to the basket",
+            "name": "search for the baskets",
             "match": {
-              "location": "Basket.iAddAnItemToTheBasket()"
+              "location": "Basket.searchForTheBaskets()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 38728,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "merge the baskets",
+            "match": {
+              "location": "Basket.mergeTheBaskets()"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 36396,
+              "duration": 40595,
               "status": "passed"
             },
-            "line": 8,
-            "name": "i can view the item in my basket",
+            "line": 9,
+            "name": "able to view the merged baskets",
             "match": {
-              "location": "Basket.iCanViewTheItemInMyBasket()"
+              "location": "Basket.ableToViewTheMergedBaskets()"
             },
             "keyword": "Then "
           }
         ]
       }
     ],
-    "name": "create basket",
+    "name": "merge basket",
     "description": "",
-    "id": "create-basket",
+    "id": "merge-basket",
     "keyword": "Feature",
-    "uri": "src/test/resources/module1Features/createBasket.feature",
+    "uri": "src/test/resources/module1Features/mergeBasket.feature",
     "tags": [
       {
         "line": 1,

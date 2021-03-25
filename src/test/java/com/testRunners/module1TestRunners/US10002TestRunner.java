@@ -1,4 +1,4 @@
-package com.testRunners;
+package com.testRunners.module1TestRunners;
 
 import cucumber.api.CucumberOptions;
 import cucumber.api.junit.Cucumber;

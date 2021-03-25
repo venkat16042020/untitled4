@@ -1,4 +1,4 @@
-package com.testRunners;
+package com.testRunners.module1TestRunners;
 
 import org.junit.runner.RunWith;
 
@@ -15,6 +15,6 @@ import cucumber.api.junit.Cucumber;
         glue = {"com/project/testing/module1"}
 )
 
-public class US10001TestRunner {
+public class tttUS10001TestRunner {
 
 }
