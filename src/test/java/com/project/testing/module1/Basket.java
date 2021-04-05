@@ -20,6 +20,7 @@ public class Basket {
 
     @Given("^that i am on the shopping website$")
     public void thatIAmOnTheShoppingWebsite() {
+
     }
 
     @When("^i add an item to the basket$")
