@@ -1,4 +1,4 @@
-@run
+@regression
 Feature: link basket
 #  shopping basket features
 

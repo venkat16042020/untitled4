@@ -1,4 +1,4 @@
-@run
+@smoke @regression
 Feature: books list api
 #  shopping basket features
 

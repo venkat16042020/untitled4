@@ -10,7 +10,7 @@ import org.junit.runner.RunWith;
                 "json:reports/cucumber.json",
                 "pretty"},
         tags = {"@runit,@run","~@ignore"},
-        features = {"src/test/resources/module1Features/createBasket.feature"},
+        features = {"src/test/resources/module1Features/deleteBasket.feature"},
         glue = {"com/project/testing/module1"}
 )
 

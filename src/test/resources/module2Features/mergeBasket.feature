@@ -1,4 +1,4 @@
-@run
+@regression
 Feature: merge basket
 #  shopping basket features
 

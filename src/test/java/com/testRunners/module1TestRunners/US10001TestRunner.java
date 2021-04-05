@@ -1,9 +1,8 @@
 package com.testRunners.module1TestRunners;
 
-import org.junit.runner.RunWith;
-
 import cucumber.api.CucumberOptions;
 import cucumber.api.junit.Cucumber;
+import org.junit.runner.RunWith;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
@@ -11,10 +10,10 @@ import cucumber.api.junit.Cucumber;
                 "json:reports/cucumber.json",
                 "pretty"},
         tags = {"@runit,@run","~@ignore"},
-        features = {"src/test/resources/module1Features/ApiTesting.feature"},
+        features = {"src/test/resources/module1Features/createBasket.feature"},
         glue = {"com/project/testing/module1"}
 )
 
-public class tttUS10001TestRunner {
+public class US10001TestRunner {
 
 }

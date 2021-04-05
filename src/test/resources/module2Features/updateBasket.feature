@@ -1,4 +1,4 @@
-@run
+@regression
 Feature: update basket
 #  shopping basket features
 

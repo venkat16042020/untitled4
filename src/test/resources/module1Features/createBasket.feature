@@ -1,4 +1,4 @@
-@run
+@smoke @regression
 Feature: create basket
 #  shopping basket features
 

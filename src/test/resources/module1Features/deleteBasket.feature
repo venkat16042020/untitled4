@@ -1,4 +1,4 @@
-@run
+@regression @smoke
 Feature: delete basket
 #  shopping basket features
 

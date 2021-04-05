@@ -10,15 +10,88 @@
           }
         ],
         "line": 5,
-        "name": "merge basket",
+        "name": "test books list api",
         "description": "",
-        "id": "merge-basket;merge-basket",
+        "id": "books-list-api;test-books-list-api",
         "type": "scenario",
         "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 7439171,
+              "duration": 5674600756,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "setup api inventory",
+            "match": {
+              "location": "MyApiStepDefs.setupApiInventory()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 18046800102,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "trigger api",
+            "match": {
+              "location": "MyApiStepDefs.triggerApi()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 377081025,
+              "error_message": "java.lang.AssertionError: 1 expectation failed.\nExpected status code \u003c200\u003e but was \u003c401\u003e.\n\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\r\n\tat org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:72)\r\n\tat org.codehaus.groovy.reflection.CachedConstructor.doConstructorInvoke(CachedConstructor.java:59)\r\n\tat org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrap.callConstructor(ConstructorSite.java:84)\r\n\tat org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:59)\r\n\tat org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:263)\r\n\tat org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)\r\n\tat io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:493)\r\n\tat io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)\r\n\tat org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:47)\r\n\tat org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:125)\r\n\tat org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:139)\r\n\tat io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:674)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\r\n\tat java.lang.reflect.Method.invoke(Method.java:498)\r\n\tat org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)\r\n\tat org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:193)\r\n\tat org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:61)\r\n\tat org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:51)\r\n\tat org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:171)\r\n\tat org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)\r\n\tat io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:126)\r\n\tat io.restassured.specification.ResponseSpecification$statusCode$0.callCurrent(Unknown Source)\r\n\tat org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:51)\r\n\tat org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:171)\r\n\tat org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)\r\n\tat io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:134)\r\n\tat io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:89)\r\n\tat io.restassured.internal.ValidatableResponseImpl.super$2$statusCode(ValidatableResponseImpl.groovy)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\r\n\tat java.lang.reflect.Method.invoke(Method.java:498)\r\n\tat org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:107)\r\n\tat groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)\r\n\tat groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1268)\r\n\tat org.codehaus.groovy.runtime.ScriptBytecodeAdapter.invokeMethodOnSuperN(ScriptBytecodeAdapter.java:144)\r\n\tat io.restassured.internal.ValidatableResponseImpl.statusCode(ValidatableResponseImpl.groovy:142)\r\n\tat io.restassured.internal.ValidatableResponseImpl.statusCode(ValidatableResponseImpl.groovy)\r\n\tat com.project.testing.module1.MyApiStepDefs.verifyBooksListIsReturned(MyApiStepDefs.java:35)\r\n\tat ✽.Then verify books list is returned(module1Features/ApiTesting.feature:8)\r\n",
+              "status": "failed"
+            },
+            "line": 8,
+            "name": "verify books list is returned",
+            "match": {
+              "location": "MyApiStepDefs.verifyBooksListIsReturned()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "books list api",
+    "description": "",
+    "id": "books-list-api",
+    "keyword": "Feature",
+    "uri": "module1Features/ApiTesting.feature",
+    "tags": [
+      {
+        "line": 1,
+        "name": "@smoke"
+      },
+      {
+        "line": 1,
+        "name": "@regression"
+      }
+    ]
+  },
+  {
+    "line": 2,
+    "elements": [
+      {
+        "comments": [
+          {
+            "line": 3,
+            "value": "#  shopping basket features"
+          }
+        ],
+        "line": 5,
+        "name": "create basket",
+        "description": "",
+        "id": "create-basket;create-basket",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 175912,
               "status": "passed"
             },
             "line": 6,
@@ -30,52 +103,128 @@
           },
           {
             "result": {
-              "duration": 31263,
+              "duration": 67659,
               "status": "passed"
             },
             "line": 7,
-            "name": "search for the baskets",
+            "name": "i add an item to the basket",
             "match": {
-              "location": "Basket.searchForTheBaskets()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 38728,
-              "status": "passed"
-            },
-            "line": 8,
-            "name": "merge the baskets",
-            "match": {
-              "location": "Basket.mergeTheBaskets()"
+              "location": "Basket.iAddAnItemToTheBasket()"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 40595,
+              "duration": 76057,
               "status": "passed"
             },
-            "line": 9,
-            "name": "able to view the merged baskets",
+            "line": 8,
+            "name": "i can view the item in my basket",
             "match": {
-              "location": "Basket.ableToViewTheMergedBaskets()"
+              "location": "Basket.iCanViewTheItemInMyBasket()"
             },
             "keyword": "Then "
           }
         ]
       }
     ],
-    "name": "merge basket",
+    "name": "create basket",
     "description": "",
-    "id": "merge-basket",
+    "id": "create-basket",
     "keyword": "Feature",
-    "uri": "src/test/resources/module1Features/mergeBasket.feature",
+    "uri": "module1Features/createBasket.feature",
     "tags": [
       {
         "line": 1,
-        "name": "@run"
+        "name": "@smoke"
+      },
+      {
+        "line": 1,
+        "name": "@regression"
+      }
+    ]
+  },
+  {
+    "line": 2,
+    "elements": [
+      {
+        "comments": [
+          {
+            "line": 3,
+            "value": "#  shopping basket features"
+          }
+        ],
+        "line": 5,
+        "name": "delete basket",
+        "description": "",
+        "id": "delete-basket;delete-basket",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 105454,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "that i am on the shopping website",
+            "match": {
+              "location": "Basket.thatIAmOnTheShoppingWebsite()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 87257,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "search for the basket",
+            "match": {
+              "location": "Basket.searchForTheBasket()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 67658,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "delete the basket",
+            "match": {
+              "location": "Basket.deleteTheBasket()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 78857,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "unable to view the item in my basket",
+            "match": {
+              "location": "Basket.unableToViewTheItemInMyBasket()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "delete basket",
+    "description": "",
+    "id": "delete-basket",
+    "keyword": "Feature",
+    "uri": "module1Features/deleteBasket.feature",
+    "tags": [
+      {
+        "line": 1,
+        "name": "@regression"
+      },
+      {
+        "line": 1,
+        "name": "@smoke"
       }
     ]
   }
