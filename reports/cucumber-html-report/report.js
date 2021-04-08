@@ -50,36 +50,45 @@ formatter.step({
   "name": "i can view the item in my basket",
   "keyword": "Then "
 });
+formatter.step({
+  "line": 10,
+  "name": "enter \"username\" and \"password\"",
+  "keyword": "Then "
+});
 formatter.match({
   "location": "Basket.thatIAmOnTheShoppingWebsite()"
 });
 formatter.result({
-  "duration": 437626539,
+  "duration": 2206105570,
   "status": "passed"
 });
 formatter.match({
   "location": "Basket.iAddAnItemToTheBasket()"
 });
 formatter.result({
-  "duration": 67191,
+  "duration": 69058,
   "status": "passed"
 });
 formatter.match({
   "location": "Basket.iCanViewTheItemInMyBasket()"
 });
 formatter.result({
-  "duration": 60659,
+  "duration": 68592,
   "status": "passed"
 });
 formatter.match({
   "location": "Basket.iCanViewTheItemInMyBasket()"
 });
 formatter.result({
-  "duration": 48061,
+  "duration": 57393,
   "status": "passed"
+});
+formatter.match({});
+formatter.result({
+  "status": "undefined"
 });
 formatter.scenario({
-  "line": 11,
+  "line": 12,
   "name": "create basket2",
   "description": "",
   "id": "create-basket;create-basket2",
@@ -87,17 +96,17 @@ formatter.scenario({
   "keyword": "Scenario"
 });
 formatter.step({
-  "line": 12,
+  "line": 13,
   "name": "that i am on the shopping website",
   "keyword": "Given "
 });
 formatter.step({
-  "line": 13,
+  "line": 14,
   "name": "i add an item to the basket",
   "keyword": "When "
 });
 formatter.step({
-  "line": 14,
+  "line": 15,
   "name": "i can view the item in my basket",
   "keyword": "Then "
 });
@@ -105,21 +114,21 @@ formatter.match({
   "location": "Basket.thatIAmOnTheShoppingWebsite()"
 });
 formatter.result({
-  "duration": 101721,
+  "duration": 111519,
   "status": "passed"
 });
 formatter.match({
   "location": "Basket.iAddAnItemToTheBasket()"
 });
 formatter.result({
-  "duration": 59259,
+  "duration": 61126,
   "status": "passed"
 });
 formatter.match({
   "location": "Basket.iCanViewTheItemInMyBasket()"
 });
 formatter.result({
-  "duration": 58327,
+  "duration": 62526,
   "status": "passed"
 });
 });
